@@ -1,0 +1,46 @@
+Aufgabe 4.1 
+Sichtbarkeiten (11 Punkte)
+
+Von mir gefundene Unstimmigkeiten sind als Kommentare angefügt. Keine Garantie auf Richtigkeit oder Vollständigkeit.
+
+Gegeben seien die folgenden Klassenvereinbarungen:
+
+public class A {
+	private int a;
+	public int b;
+	
+	private int g() {
+		a++;
+		b++;
+		return a + b;
+	}
+
+	public void h(B obj) {
+		obj.c += a;//B.c ist private und kann nur in B zugegriffen werden;
+		obj.d++;
+		obj.i();
+	}
+}
+
+
+public class B {
+	private int c;
+	public int d;
+	
+	public int i() {
+		c++;
+		d++;
+		return d + c;
+	}
+
+	private void k(A obj) {
+		obj.a += c;//A.a ist private und kann nur in A zugegriffen werden;
+		obj.b = obj.g();//A.g() ist private und kann nur in A zugegriffen werden;
+	}
+}
+
+
+
+Lösungen dementsprechend: D – 12, J – 29, K – 30
+
+
