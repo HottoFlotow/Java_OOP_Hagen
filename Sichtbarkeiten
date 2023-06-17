@@ -1,9 +1,9 @@
-Aufgabe 4.1 
-Sichtbarkeiten (11 Punkte)
+//Aufgabe 4.1 
+//Sichtbarkeiten (11 Punkte)
 
-Von mir gefundene Unstimmigkeiten sind als Kommentare angefügt. Keine Garantie auf Richtigkeit oder Vollständigkeit.
+//Von mir gefundene Unstimmigkeiten sind als Kommentare angefügt. Keine Garantie auf Richtigkeit oder Vollständigkeit.
 
-Gegeben seien die folgenden Klassenvereinbarungen:
+//Gegeben seien die folgenden Klassenvereinbarungen:
 
 public class A {
 	private int a;
@@ -41,6 +41,6 @@ public class B {
 
 
 
-Lösungen dementsprechend: D – 12, J – 29, K – 30
+//Lösungen dementsprechend: D – 12, J – 29, K – 30
 
 
